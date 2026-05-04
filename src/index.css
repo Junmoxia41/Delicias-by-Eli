@@ -9,7 +9,7 @@
   --font-script: "Dancing Script", cursive;
   --font-sans: "Poppins", sans-serif;
   
-  --background-image-monstera-pattern: url('https://www.transparenttextures.com/patterns/leaves.png');
+  --background-image-monstera-pattern: radial-gradient(circle at 1px 1px, rgba(46, 90, 46, 0.08) 1px, transparent 0);
 }
 
 @layer base {
