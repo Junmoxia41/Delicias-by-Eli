@@ -1,9 +1,8 @@
 const CACHE_NAME = 'delicias-by-eli-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@300;400;500;600;700&display=swap'
+  './',
+  './index.html',
+  './manifest.json'
 ];
 
 // Install Event

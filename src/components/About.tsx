@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import { Star, MapPin, Clock, Banknote, Ban } from 'lucide-react';
 
 const About = () => {
+  const profileWebp = `${import.meta.env.BASE_URL}imagen/eli-repostera.webp`;
+  const profileJpg = `${import.meta.env.BASE_URL}imagen/eli-repostera.jpg`;
+
   const infoPills = [
     { icon: <Star size={18} className="text-bakery-gold fill-bakery-gold" />, text: "5.0 (2 reseñas)", label: "Calificación" },
     { icon: <Banknote size={18} className="text-bakery-green" />, text: "CUP ($$ - $$$$$)", label: "Rango de Precios" },
@@ -23,8 +26,8 @@ const About = () => {
           >
             <div className="rounded-[3.5rem] overflow-hidden shadow-2xl relative z-10 border-8 border-white">
               <img 
-                src="/imagen/eli-repostera.webp" 
-                onError={(e) => { e.currentTarget.src = '/imagen/eli-repostera.jpg' }}
+                src={profileWebp}
+                onError={(e) => { e.currentTarget.src = profileJpg; }}
                 alt="Eli en su cocina artesanal" 
                 className="w-full h-[600px] object-cover"
               />

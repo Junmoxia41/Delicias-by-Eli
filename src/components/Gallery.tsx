@@ -18,6 +18,11 @@ const Gallery = () => {
     ? galleryItems 
     : galleryItems.filter(item => item.category === filter);
 
+  const resolveImage = (src: string) => {
+    if (src.startsWith('http')) return src;
+    return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`;
+  };
+
   return (
     <section id="galeria" className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto text-center">
@@ -60,7 +65,7 @@ const Gallery = () => {
                 className="group relative h-96 overflow-hidden rounded-[2.5rem] cursor-pointer shadow-xl border-4 border-white"
               >
                 <img 
-                  src={item.src} 
+                  src={resolveImage(item.src)}
                   alt={item.alt} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

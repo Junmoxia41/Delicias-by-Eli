@@ -2,13 +2,15 @@ import { motion } from 'framer-motion';
 import { ChevronDown, MapPin } from 'lucide-react';
 
 const Hero = () => {
+  const heroImage = `${import.meta.env.BASE_URL}imagen/hero-cake.webp`;
+
   return (
     <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("/imagen/hero-cake.webp")',
+          backgroundImage: `url("${heroImage}")`,
           backgroundPosition: 'center',
           backgroundSize: 'cover'
         }}

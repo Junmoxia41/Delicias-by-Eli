@@ -7,6 +7,9 @@ const ProductCard = ({ item }: { item: MenuItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const waMsg = `Hola Eli! Me interesa ${item.name} (${item.price}). ¿Está disponible?`;
   const waUrl = `https://wa.me/5354904825?text=${encodeURIComponent(waMsg)}`;
+  const imageSrc = item.image.startsWith('http')
+    ? item.image
+    : `${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`;
 
   return (
     <motion.div
@@ -18,7 +21,7 @@ const ProductCard = ({ item }: { item: MenuItem }) => {
     >
       <div className="relative h-64 overflow-hidden">
         <img 
-          src={item.image} 
+          src={imageSrc}
           alt={item.name} 
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
         />

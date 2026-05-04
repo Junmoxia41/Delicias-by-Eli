@@ -13,10 +13,10 @@
     <meta property="og:title" content="Delicias by Eli | Pasteles que cuentan tu historia" />
     <meta property="og:description" content="Endulzamos tus momentos más especiales en Santa Clara con sabores auténticos y diseños únicos hechos con amor." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/imagen/hero-cake.webp" />
+    <meta property="og:image" content="imagen/hero-cake.webp" />
     <meta property="og:locale" content="es_CU" />
     <meta name="theme-color" content="#F8C8DC" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     
     <!-- Soporte para iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,7 +37,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          navigator.serviceWorker.register('./sw.js')
             .then(reg => console.log('Service Worker registrado correctamente'))
             .catch(err => console.log('Error al registrar Service Worker', err));
         });
