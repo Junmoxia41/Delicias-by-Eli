@@ -9,7 +9,7 @@ const ProductCard = ({ item }: { item: MenuItem }) => {
   const waUrl = `https://wa.me/5354904825?text=${encodeURIComponent(waMsg)}`;
   const imageSrc = item.image.startsWith('http')
     ? item.image
-    : `${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`;
+    : item.image.replace(/^\//, '');
 
   return (
     <motion.div

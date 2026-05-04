@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, MapPin } from 'lucide-react';
 
 const Hero = () => {
-  const heroImage = `${import.meta.env.BASE_URL}imagen/hero-cake.webp`;
+  const heroImage = 'imagen/hero-cake.jpg';
 
   return (
     <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">

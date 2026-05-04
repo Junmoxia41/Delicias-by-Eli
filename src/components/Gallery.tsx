@@ -20,7 +20,7 @@ const Gallery = () => {
 
   const resolveImage = (src: string) => {
     if (src.startsWith('http')) return src;
-    return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`;
+    return src.replace(/^\//, '');
   };
 
   return (

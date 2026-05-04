@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { Star, MapPin, Clock, Banknote, Ban } from 'lucide-react';
 
 const About = () => {
-  const profileWebp = `${import.meta.env.BASE_URL}imagen/eli-repostera.webp`;
-  const profileJpg = `${import.meta.env.BASE_URL}imagen/eli-repostera.jpg`;
+  const profileWebp = 'imagen/eli-repostera.webp';
+  const profileJpg = 'imagen/eli-repostera.jpg';
 
   const infoPills = [
     { icon: <Star size={18} className="text-bakery-gold fill-bakery-gold" />, text: "5.0 (2 reseñas)", label: "Calificación" },
