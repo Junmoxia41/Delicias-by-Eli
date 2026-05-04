@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicias by Eli | Repostería Artesanal en Santa Clara, Cuba</title>
+    <meta name="description" content="Repostería artesanal en Santa Clara, Cuba. Pasteles personalizados, Cakes de Guayaba, Tres Leches y más. ¡Haz tu pedido por WhatsApp!" />
+    <meta name="keywords" content="repostería santa clara, pasteles cuba, cakes temáticos, tres leches, delicias by eli" />
+    <meta name="author" content="Delicias by Eli" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Delicias by Eli | Pasteles que cuentan tu historia" />
+    <meta property="og:description" content="Endulzamos tus momentos más especiales en Santa Clara con sabores auténticos y diseños únicos hechos con amor." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/imagen/hero-cake.webp" />
+    <meta property="og:locale" content="es_CU" />
+    <meta name="theme-color" content="#F8C8DC" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Soporte para iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Eli Delicias" />
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/992/992717.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧁</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registrado correctamente'))
+            .catch(err => console.log('Error al registrar Service Worker', err));
+        });
+      }
+    </script>
+  </body>
+</html>

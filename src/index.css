@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bakery-pink: #F8C8DC;
+  --color-bakery-gold: #D4AF37;
+  --color-bakery-cream: #FFF9F0;
+  --color-bakery-green: #2E5A2E;
+
+  --font-script: "Dancing Script", cursive;
+  --font-sans: "Poppins", sans-serif;
+  
+  --background-image-monstera-pattern: url('https://www.transparenttextures.com/patterns/leaves.png');
+}
+
+@layer base {
+  body {
+    @apply bg-bakery-cream text-gray-800 font-sans;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Scrollbar Hide Utility */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Soporte para snap scrolling táctil */
+.snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-start {
+  scroll-snap-align: start;
+}
