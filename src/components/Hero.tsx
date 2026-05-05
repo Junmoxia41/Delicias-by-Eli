@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, MapPin } from 'lucide-react';
 
 const Hero = () => {
-  const heroImage = 'imagen/hero-cake.jpg';
+  const heroImage = 'image-set(url("imagen/hero-cake.webp") type("image/webp"), url("imagen/hero-cake.jpg") type("image/jpeg"))';
 
   return (
     <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -10,7 +10,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url("${heroImage}")`,
+          backgroundImage: heroImage,
           backgroundPosition: 'center',
           backgroundSize: 'cover'
         }}

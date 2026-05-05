@@ -1,4 +1,4 @@
-import { Star, MessageCircle, MapPin, Clock, Ban } from 'lucide-react';
+import { Star, MessageCircle, MapPin, Clock, Ban, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -64,6 +64,31 @@ const Footer = () => {
             <span className="hover:text-bakery-gold transition-colors cursor-pointer">Privacidad</span>
             <span className="hover:text-bakery-gold transition-colors cursor-pointer">Términos</span>
             <span className="text-bakery-pink">Hecho con ❤️ en Cuba</span>
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-2xl border border-bakery-pink/20 bg-bakery-cream/70 p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-sm text-gray-600">
+            Desarrollo web por <span className="font-bold text-bakery-green">Studio Lexair</span>. Si quieres crear tu pagina web:
+            <span className="font-semibold"> studio.lexair@gmail.com</span>
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="mailto:studio.lexair@gmail.com"
+              className="inline-flex items-center gap-2 rounded-full border border-bakery-green/30 px-4 py-2 text-sm font-bold text-bakery-green hover:bg-white"
+            >
+              <Mail size={16} />
+              Email
+            </a>
+            <a
+              href="https://wa.me/5352678747?text=Hola%20Studio%20Lexair,%20quiero%20crear%20mi%20pagina%20web"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold text-white hover:opacity-90"
+            >
+              <MessageCircle size={16} />
+              WhatsApp 52678747
+            </a>
           </div>
         </div>
       </div>

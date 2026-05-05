@@ -1,4 +1,4 @@
-const CACHE_NAME = 'delicias-by-eli-v1';
+const CACHE_NAME = 'delicias-by-eli-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -12,6 +12,7 @@ self.addEventListener('install', (event) => {
       return cache.addAll(ASSETS_TO_CACHE);
     })
   );
+  self.skipWaiting();
 });
 
 // Activate Event
@@ -23,6 +24,7 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
+  self.clients.claim();
 });
 
 // Fetch Event (Network First, then Cache)
