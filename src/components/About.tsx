@@ -24,12 +24,12 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="rounded-[3.5rem] overflow-hidden shadow-2xl relative z-10 border-8 border-white">
+            <div className="rounded-[3.5rem] overflow-hidden shadow-2xl relative z-10 border-8 border-white aspect-square max-w-[600px] mx-auto bg-bakery-cream">
               <img 
                 src={profileWebp}
                 onError={(e) => { e.currentTarget.src = profileJpg; }}
                 alt="Eli en su cocina artesanal" 
-                className="w-full h-[600px] object-cover"
+                className="w-full h-full object-contain object-center"
               />
             </div>
             {/* Decorative elements */}
